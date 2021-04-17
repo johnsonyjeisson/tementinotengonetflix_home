@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+Johnson & Jeisson
+https://johnsonyjeison.xyz/
+johnsonyjeisson@yahoo.com
+   ______    _____  _____) __     __) __    __) _____) __     __) _____ ______     _____) 
+  (, /    ) (, /  /       (, /|  /   (, )  /  /       (, /|  /   (, /  (, /    ) /        
+    /---(     /   )__       / | /       | /   )__       / | /      /     /    /  )__      
+ ) / ____)___/__/        ) /  |/        |/  /        ) /  |/   ___/__  _/___ /_/          
+(_/ (   (__ /  (_____)  (_/   '         |  (_____)  (_/   '  (__ /   (_/___ / (_____)     
+                                                                                       
+                             
+-->	
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="semiamoblada y limpia, siempre a la orden">
+    <title>Te mentí, no tengo netflix. Te traje a una expo</title>
+    <link rel="shortcut icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.hotukdeals.com%2Fimages%2Fmerchants%2FlongDescription%2Fnetflix-logo.png&f=1&nofb=1">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    </head>
+
+   <style>
+        #blink {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            font-size: 8vw;
+            font-weight: bold;
+            color:whitesmoke;
+            transition: 1.5s;
+            text-align: center;
+        }
+
+        body {
+            background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/11618225/original_e579588fb0009548376bb6fbf7423c02.png?1618625283?bc=0");
+            background-attachment: scroll;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100%;
+            font-family: 'Arial';
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    
+    <p id="blink"> próximamente </p>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1200);
+    </script>
+
+</body>
+</html>
