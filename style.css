@@ -1,0 +1,76 @@
+html { 
+    overflow: auto; 
+    overflow-x: hidden; 
+    overflow-y: auto;
+    /*
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/heartsarrow.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/heartsarrow.gif"), auto;
+    */
+} 
+
+
+body{
+    background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/12053038/original_9749c86ca330bcbb044e9b12207faf22.png?1621880687?bc=0"); 
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: auto; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+   }
+
+#cama_s{
+position: fixed;
+width: 27vw;
+top: 10%;
+left: 32%;
+padding: 0;
+}
+
+#cama_s:hover{
+    filter:drop-shadow(0 0 1.5rem #00ff00);
+}
+
+
+#cama_m{
+    position: fixed;
+    width: 30vw;
+    bottom: 13%;
+    right: 7%;
+    padding: 0;
+    }
+    
+#cama_m:hover{
+   filter:drop-shadow(0 0 1.5rem #0000ff);
+    }
+    
+#cama_l{
+    position: fixed;
+    width: 35vw;
+    bottom: 5%;
+    left: 5%;
+    padding: 0;
+    }
+
+#cama_l:hover{
+  filter:drop-shadow(0 0 1.5rem #ff0000);
+    }
+
+    .row {
+        position: inherit;
+        float: right;
+        /*
+        width: 33.33%;
+        background-color: white;
+        */
+        padding-top:  1px;
+        padding-left:  3px;
+        padding-right:  3px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        }
