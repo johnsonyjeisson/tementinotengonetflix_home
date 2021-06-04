@@ -77,30 +77,40 @@ __________\     \               //\::/\:/___  ___ /       /::\ \:\ \::/\:\ \:\
      loading-screen="enabled: false"; vr-mode-ui="enabled: false">
         <a-assets>
 
-            <a-asset-items id="cuartojuvenil" src="./assets/cuartojuvenil.gltf" preload="auto"></a-asset-item>
+            <a-asset-items id="cuartojuvenil" src="./assets/cuartojuvenil.glb" preload="auto"></a-asset-item>
             <a-asset-items id="cama" src="./assets/cama.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="planta" src="./assets/planta.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="plantaa" src="./assets/plantaa.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="plantaaa" src="./assets/plantaaa.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="tvplano" src="./assets/tvplano.gltf" preload="auto"></a-asset-item>
-            <video id="juanga" autoplay loop="true" src="./assets/juanga.mp4"></video>
-            <video id="hastaqueteconoci" autoplay loop="true" src="./assets/hastaqueteconoci.mp4"></video>
+            <a-asset-items id="lampara" src="./assets/lampara.gltf" preload="auto"></a-asset-item>
+            <a-asset-items id="pizza" src="./assets/pizza.gltf" preload="auto"></a-asset-item>
+            <a-asset-items id="peluche" src="./assets/peluche.gltf" preload="auto"></a-asset-item>
+            <video id="juanga" autoplay loop="true" volume="0"
+            sound="maxDistance:20;rolloffFactor:10" src="./assets/juanga.mp4"></video>
+            <video id="hastaqueteconoci" autoplay loop="true"  src="./assets/hastaqueteconoci.mp4"></video>
   
             
             
         </a-assets>
                        
                        <a-entity gltf-model="#cuartojuvenil" scale="0.15 0.15 0.15" position="0 0 0"></a-entity>
-                       <a-entity gltf-model="#cama" scale="0.18 0.18 0.18" position="3.44 0 1.81" rotation="0 90 0"></a-entity>
+                       <a-entity gltf-model="#cama" scale="0.18 0.18 0.18" position="3.831 0 1.81" rotation="0 90 0"></a-entity>
                        <a-entity gltf-model="#planta" scale="0.02 0.02 0.02" position="-5.80 0 -0.73" rotation="0 -30 0"></a-entity>
                        <a-entity gltf-model="#plantaa" scale="0.2 0.2 0.2" position="-5.80 0 0.50" rotation="0 -30 0"></a-entity>
                        <a-entity gltf-model="#plantaaa" scale="0.13 0.13 0.13" position="-5.28 0 0ds" rotation="0 -30 0"></a-entity>
                        <a-entity gltf-model="#tvplano" scale="0.5 0.5 0.5" position="4.33 2.16 5.66" rotation="0 180 0"></a-entity>
-                       <a-video src="#juanga" width="9" height="16" scale="0.015 0.015 0.015" position="-4.740 2.228 -4.515" rotation="-90 90 0"></a-video>
-                       <a-video src="#hastaqueteconoci" width="16" height="9" scale="0.048 0.056 0" position="-5.435 2.522 -3.658" rotation="0 90 0"></a-video>
-
+                       <a-entity gltf-model="#lampara" scale="0.18 0.18 0.18" position="1.284 1.706 -6.330" rotation="0 90 0"></a-entity>
+                       <a-entity gltf-model="#pizza" scale="0.002 0.002 0.002" position="-4.649 2.209 -4.869" rotation="0 180 0"></a-entity>
+                       <a-entity gltf-model="#peluche" scale="0.13 0.13 0.13" position="-6.010 1.369 5.954" rotation="0 45 -90"></a-entity>
+                       <a-video src="#juanga" volume="0"
+                       sound="maxDistance:20;rolloffFactor:10" width="9" height="16" scale="0.015 0.015 0.015" position="-4.740 2.228 -4.515" rotation="-90 90 0"></a-video>
+                       <a-video src="#hastaqueteconoci" width="16" height="9" scale="0.025 0.025 0.025" position="-5.432 2.412 -3.663" rotation="0 90 0"></a-video>
+                       <!--
+                       <a-video src="#juanga" width="9" height="16" scale="0.014 0.014 0.014" position="-5.432 2.658 -3.343" rotation="0 90 0"></a-video>
+                       -->
                        
-                       <a-entity position="-4.3 2.3 5" rotation="0 0 0"> <a-camera></a-camera>  </a-entity> 
+                       <a-entity position="-4.3 2.1 5" rotation="0 0 0"> <a-camera></a-camera>  </a-entity> 
                        
                        
                        
