@@ -45,9 +45,8 @@ _-' ___________ '-_
             <a-asset-items id="camita" src="./assets/camita.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="ventilador" src="./assets/ventilador.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="aloe" src="./assets/aloe.gltf" preload="auto"></a-asset-item>
- <!-- 
-                          <audio id="cancion" src="./assets/cristiancastro.mp3" preload="auto" autoplay loop="true"></audio>
-                    -->
+            <audio id="calle" src="./assets/audiocalle.mp3" preload="auto" autoplay loop="true"></audio>
+        
 
         </a-assets>
                        
@@ -56,16 +55,11 @@ _-' ___________ '-_
                        <a-entity gltf-model="#micro" scale="0.05 0.05 0.05" position="2.26 0.37 -4.17"></a-entity>
                        <a-entity gltf-model="#ropa" scale="0.02 0.02 0.02" position="-3.20 0.19 -5.90" rotation="0 90 0"></a-entity>
                        <a-entity gltf-model="#camita" scale="0.06 0.06 0.06" position="-2.322 0.19 -3.283" rotation="0 180 0"></a-entity>
-                       <a-entity gltf-model="#ventilador" scale="0.07 0.07 0.07" position="-0.24 9.41 -0.22"></a-entity>
+                       <a-entity gltf-model="#ventilador" scale="0.07 0.07 0.07" position="-0.24 9.41 -0.22" animation="property: rotation; to: 0 360 0; dur: 10000as; easing: linear; loop: true"></a-entity>
                        <a-entity gltf-model="#aloe" scale="0.07 0.07 0.07" position="0.62 2.95 6.31"></a-entity>
                        <a-entity position="3 5.5 5.6" rotation="0 0 0"> <a-camera></a-camera>  </a-entity> 
-                      <!-- 
-                           <a-entity sound="src:#cancion; autoplay="true"; loop="true"></a-entity>
-                      -->
-                       
-                       
-                       
-
+                       <a-entity sound="src:#calle; autoplay="true"; loop="true" ></a-entity>
+                      
     </a-scene>
 </body>
 

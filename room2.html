@@ -86,8 +86,8 @@ __________\     \               //\::/\:/___  ___ /       /::\ \:\ \::/\:\ \:\
             <a-asset-items id="lampara" src="./assets/lampara.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="pizza" src="./assets/pizza.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="peluche" src="./assets/peluche.gltf" preload="auto"></a-asset-item>
-            <video id="juanga" autoplay loop="true" volume="0"
-            sound="maxDistance:20;rolloffFactor:10" src="./assets/juanga.mp4"></video>
+            <a-asset-items id="skate" src="./assets/skate.gltf" preload="auto"></a-asset-item>
+            <video id="juangacel" autoplay loop="true" src="./assets/juangacel.mp4"></video>
             <video id="hastaqueteconoci" autoplay loop="true"  src="./assets/hastaqueteconoci.mp4"></video>
   
             
@@ -103,17 +103,11 @@ __________\     \               //\::/\:/___  ___ /       /::\ \:\ \::/\:\ \:\
                        <a-entity gltf-model="#lampara" scale="0.18 0.18 0.18" position="1.284 1.706 -6.330" rotation="0 90 0"></a-entity>
                        <a-entity gltf-model="#pizza" scale="0.002 0.002 0.002" position="-4.649 2.209 -4.869" rotation="0 180 0"></a-entity>
                        <a-entity gltf-model="#peluche" scale="0.13 0.13 0.13" position="-6.010 1.369 5.954" rotation="0 45 -90"></a-entity>
-                       <a-video src="#juanga" volume="0"
-                       sound="maxDistance:20;rolloffFactor:10" width="9" height="16" scale="0.015 0.015 0.015" position="-4.740 2.228 -4.515" rotation="-90 90 0"></a-video>
-                       <a-video src="#hastaqueteconoci" width="16" height="9" scale="0.025 0.025 0.025" position="-5.432 2.412 -3.663" rotation="0 90 0"></a-video>
-                       <!--
-                       <a-video src="#juanga" width="9" height="16" scale="0.014 0.014 0.014" position="-5.432 2.658 -3.343" rotation="0 90 0"></a-video>
-                       -->
-                       
+                       <a-entity gltf-model="#skate" scale="0.4 0.4 0.4" position="2.233 0.810 6.069" rotation="110	60 180"></a-entity>
+                       <a-video src="#juangacel" width="16" height="9" scale="0.015 0.015 0.015" position="-4.740 2.228 -4.515" rotation="-90 0 0"></a-video>
+                       <a-video src="#hastaqueteconoci" width="16" height="9" scale="0.027 0.027 0.027" position="-5.432 2.454 -3.653" rotation="0 90 0"></a-video>
                        <a-entity position="-4.3 2.1 5" rotation="0 0 0"> <a-camera></a-camera>  </a-entity> 
-                       
-                       
-                       
+                     
 
     </a-scene>
 </body>
