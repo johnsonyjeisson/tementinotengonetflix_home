@@ -55,6 +55,7 @@ johnsonyjeisson@yahoo.com
     <link rel="shortcut icon" href="https://d2w9rnfcy7mm78.cloudfront.net/12108162/original_1f5b0d550cc265c5cc0bb4c51e5b2796.png?1622260030?bc=0">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script> 
     </head>
 
 <body>
@@ -63,7 +64,9 @@ johnsonyjeisson@yahoo.com
      loading-screen="enabled: false"; vr-mode-ui="enabled: false">
         <a-assets>
 
-            <a-asset-items id="cuartoamor" src="./assets/cuartoamor.gltf" preload="auto"></a-asset-item>
+            <a-asset-items id="cuartoamor" src="./assets/cuartoamor_02.glb" preload="auto"></a-asset-item>
+            <a-asset-items id="baño" src="./assets/baño.gltf" preload="auto"></a-asset-item>
+            <a-asset-items id="cuadro" src="./assets/cuadrovallenato.glb" preload="auto"></a-asset-item>
             <a-asset-items id="sofa" src="./assets/tantrasofa.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="camadoble" src="./assets/camadoble.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="mesitagomela" src="./assets/mesitagomi.gltf" preload="auto"></a-asset-item>
@@ -77,33 +80,40 @@ johnsonyjeisson@yahoo.com
             <a-asset-items id="guantes" src="./assets/guantes.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="gafas" src="./assets/gafas.gltf" preload="auto"></a-asset-item>
             <a-asset-items id="cigi" src="./assets/cigi.gltf" preload="auto"></a-asset-item>
+            <a-asset-items id="guaros" src="./assets/guaros.glb" preload="auto"></a-asset-item>
+            <a-asset-items id="neon" src="./assets/neon.gltf" preload="auto"></a-asset-item>
+            <video id="niebla" autoplay loop="true" src="./assets/ventana.mp4"></video>
             <audio id="motel" src="./assets/audiomotel.mp3" preload="auto" autoplay loop="true"></audio>
   
             
             
         </a-assets>
                        
-                       <a-entity gltf-model="#cuartoamor" scale="0.1 0.1 0.1" position="0 0 0"></a-entity>
-                       <a-entity gltf-model="#sofa" scale="0.1 0.1 0.1" position="12.7 0 5.6"></a-entity>
-                       <a-entity gltf-model="#camadoble" scale="0.1 0.1 0.1" position="6.19 0 -0.991"></a-entity>
-                       <a-entity gltf-model="#mesitagomela" scale="0.02 0.02 0.02" position="2.308 0 -3.710"></a-entity>
-                       <a-entity gltf-model="#mesitagomela" scale="0.02 0.02 0.02" position="10.30 0 -3.510" rotation="0 180 0"></a-entity>
-                       <a-entity gltf-model="#toalladoblada" scale="0.02 0.02 0.02" position="-8.79	2.368 -2.944" rotation="0 60 0"></a-entity>
-                       <a-entity gltf-model="#buttplug" scale="0.02 0.02 0.02" position="-9.09 2.21 -2.04"></a-entity>
-                       <a-entity gltf-model="#toilet" scale="0.02 0.02 0.02" position="-13.44 0 -3.079"></a-entity>
-                       <a-entity gltf-model="#lavamanos" scale="0.04 0.04 0.04" position="-11.02 1.41 6.28"></a-entity>
-                       <a-entity gltf-model="#papelera" scale="0.02 0.02 0.02" position="-13.44 0 -3.079"></a-entity>
-                       <a-entity gltf-model="#flotador" scale="0.1 0.1 0.1" position="6.19 1.610 0.19d" rotation="0 -120 0"></a-entity>
-                       <a-entity gltf-model="#propina" scale="0.02 0.02 0.02" position="10.027 0.956 -3.510" rotation="0 60 0"></a-entity>
-                       <a-entity gltf-model="#guantes" scale="0.3 0.3 0.3" position="10.799 0.627 -3.519" rotation="0 130 0"></a-entity>
-                       <a-entity gltf-model="#gafas" scale="0.005 0.005 0.005 " position="1.952 0.596 -3.854" rotation="0 130 0"></a-entity>
-                       <a-entity gltf-model="#cigi" scale="0.08 0.08 0.08 " position="2.563 0.872 -3.685" rotation="0 -45 0"></a-entity>
-                       <a-entity position="13.88 2.5 1.37" rotation="0 90 0"> <a-camera></a-camera>  </a-entity> 
-                       <a-entity sound="src:#motel; autoplay="true"; loop="true"></a-entity>
-                      
-
-                       
-                       
+        <a-circle mirror="interval: 200; resolution: 640; distance: 10000" scale="3 3.5 0" position="-3.021 4.394 -0.269" rotation="0 90 0"></a-circle>
+        <a-entity light="type: point; color: #ff0000; intensity: 0.5" position="6.259 6.280 3.027"></a-entity> 
+        <a-entity environment="preset: volcano; playArea: 100; lighting: none; dressing: none; ground: flat; groundTexture: none; skyType: gradient; skyColor: #800080; horizonColor: #FFC0CB; shadow: true; seed: 1"></a-entity> 
+        <a-entity gltf-model="#cuartoamor" scale="0.1 0.1 0.1" position="0 0.1 0"></a-entity>
+        <a-entity gltf-model="#baño" scale="0.1 0.1 0.1" position="0 0.1 0"></a-entity>
+        <a-entity gltf-model="#cuadro" scale="0.1 0.1 0.1" position="0 0.1 0"></a-entity>
+        <a-entity gltf-model="#sofa" scale="0.1 0.1 0.1" position="12.7 0 5.6"></a-entity>
+        <a-entity gltf-model="#camadoble" scale="0.1 0.1 0.1" position="6.19 0 -0.991"></a-entity>
+        <a-entity gltf-model="#mesitagomela" scale="0.02 0.02 0.02" position="2.308 0 -3.710"></a-entity>
+        <a-entity gltf-model="#mesitagomela" scale="0.02 0.02 0.02" position="10.30 0 -3.510" rotation="0 180 0"></a-entity>
+        <a-entity gltf-model="#toalladoblada" scale="0.02 0.02 0.02" position="-8.79	2.468 -2.944" rotation="0 60 0"></a-entity>
+        <a-entity gltf-model="#buttplug" scale="0.02 0.02 0.02" position="-9.09 2.32 -2.04"></a-entity>
+        <a-entity gltf-model="#toilet" scale="0.02 0.02 0.02" position="-13.44 0 -3.079"></a-entity>
+        <a-entity gltf-model="#lavamanos" scale="0.04 0.04 0.04" position="-11.02 1.41 6.28"></a-entity>
+        <a-entity gltf-model="#papelera" scale="0.02 0.02 0.02" position="-13.44 0 -3.079"></a-entity>
+        <a-entity gltf-model="#flotador" scale="0.1 0.1 0.1" position="6.19 1.610 0.19d" rotation="0 -120 0"></a-entity>
+        <a-entity gltf-model="#propina" scale="0.02 0.02 0.02" position="10.027 0.956 -3.510" rotation="0 60 0"></a-entity>
+        <a-entity gltf-model="#guantes" scale="0.3 0.3 0.3" position="10.799 0.627 -3.519" rotation="0 130 0"></a-entity>
+        <a-entity gltf-model="#gafas" scale="0.005 0.005 0.005 " position="1.952 0.596 -3.854" rotation="0 130 0"></a-entity>
+        <a-entity gltf-model="#cigi" scale="0.08 0.08 0.08 " position="2.563 0.872 -3.685" rotation="0 -45 0"></a-entity>
+        <a-entity gltf-model="#guaros" scale="0.16 0.16 0.16" position="-1.560 0.1 1.732" rotation="0 -60 0"></a-entity>
+        <a-entity gltf-model="#neon" scale="1.5 1.5 3" position="6.259 4.8 -4.103" rotation="0 0 0"></a-entity>    
+        <a-video src="#niebla" width="16" height="9" scale="0.73 0.73 0.73" position="-14.838 5.483 1.755" rotation="0 90 0"></a-video>        
+        <a-entity position="13.88 2.5 1.37" rotation="0 90 0"> <a-camera></a-camera>  </a-entity> 
+        <a-entity sound="src:#motel; autoplay="true"; loop="true"></a-entity>
 
     </a-scene>
 </body>
